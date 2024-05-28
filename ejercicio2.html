@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <h1>Contador de caracteres</h1>
+
+    <form>
+        <p>
+            <label>Contador de caracteres:</label>
+            <textarea name="mensaje" id="textoIngresado" cols="30" rows="10"></textarea>
+        </p>
+        <p>
+            <input type="submit" value="Contar" onclick="contarCaracteres()">
+        </p>
+    </form>
+
+    <script>
+        function contarCaracteres() {
+            const texto = document.getElementById('textoIngresado');
+            const longitud = texto.value.length;
+            alert(`Número de caracteres: ${longitud}`);
+        }
+    </script>
+
+</body>
+
+</html>

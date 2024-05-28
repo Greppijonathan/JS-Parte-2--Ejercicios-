@@ -1,0 +1,39 @@
+<!-- Crear un documento html con 3 cuadrados que, 
+    al ser clickeados, cambien el color de fondo del documento. 
+    Cada cuadrado debera tener un color distinto. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="ejercicio1.css">
+</head>
+
+<body>
+    <div id="cuadrado_1" onclick="cambiar_color_1()"></div>
+    <div id="cuadrado_2" onclick="cambiar_color_2()"></div>
+    <div id="cuadrado_3" onclick="cambiar_color_3()"></div>
+
+    <script>
+        function cambiar_color_1() {
+            const cuadrado = document.getElementById("cuadrado_1");
+            cuadrado.style.backgroundColor = "green";
+
+        }
+
+        function cambiar_color_2() {
+            const cuadrado = document.getElementById("cuadrado_2");
+            cuadrado.style.backgroundColor = "yellow";
+
+
+        }
+
+        function cambiar_color_3() {
+            const cuadrado = document.getElementById("cuadrado_3");
+            cuadrado.style.backgroundColor = "magenta";
+
+        }
+    </script>
+</body>
+
+</html>
